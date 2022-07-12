@@ -1,0 +1,273 @@
+@media screen and (min-width: 1200px) {
+body {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+#headImage img {
+    width: 100%;
+    height: fit-content;
+}
+
+#headText {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hamburger, .close, .navIcon {
+    display:none;
+}
+
+nav {
+    margin: 5% 9rem;
+    align-items: center;
+}
+
+.logo img {
+    width: 110%;
+}
+
+
+
+.navLinks {
+    background: unset;
+    position: unset;
+    width: unset;
+    text-transform: none;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mobileNavHead {
+    display: none;
+}
+
+.links span {
+    padding: 0.5rem 1rem;
+}
+
+.links span a {
+    padding: 0.2em 0.2em 0.5em 0.2em;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: all 200ms ease-in 50ms;
+}
+
+.links span a:hover {
+    background-size: 40% 3px;
+}
+
+
+
+/*div#main*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 9rem;
+}
+
+/*intro*/
+.intro {
+    position: relative;
+    
+}
+
+#introPhoto img {
+    width: unset;
+}
+
+#introText {
+    text-align: left;
+    line-height: 1.5rem;
+    background: white;
+    padding-top: 5rem;
+    padding-left: 6rem;
+    margin: 0;
+    max-width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#introText p {
+    margin-top: 2rem;
+}
+
+/*creations*/
+.creations {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-weight: normal;
+    font-size: 62px;
+    letter-spacing: 0.5rem;
+    color: white;
+    border: 2px solid white;
+    padding: 2rem;
+    width: 41%;
+    margin: 3rem 0 0 9rem;
+
+}
+
+.subHeading {
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 2rem;
+}
+
+#moreCreations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9rem 0.5rem 2rem 0.5rem;
+    justify-content: space-between;
+}
+
+#moreCreations .button {
+    display: block;
+ }
+
+.button {
+    padding: 0.4rem 2rem;
+    border: 2px solid black;
+    transition: all 200ms ease-in 50ms;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/*previews*/
+
+#previews div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+#previews div span {
+    position: relative;
+    padding: 0.5rem;
+}
+
+#previews div span img {
+    cursor: pointer;
+    width: 100%;
+    transition: all 200ms ease-in 50ms;
+}
+
+
+#previews div span:hover img {
+    opacity: 30%;
+}
+
+#previews div span:hover p {
+    color:#000;
+}
+
+#previews div span p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 0.1rem;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    max-width: 70%;
+    width: unset;
+}
+
+#previews span.button {
+    display: none;
+}
+
+/*footer*/
+footer {
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+
+.copyrights {
+    margin: 0;
+}
+
+.copyrights p {
+    color: white;
+    opacity: 70%;
+    padding-bottom: 1em;
+}
+
+.footerLogo {
+    
+}
+
+.footerLogo img {
+    width: 36%;
+    margin-bottom: 1em;
+}
+
+.mainFooter {
+    text-align: left;
+}
+
+.mainFooter .links {
+    margin-top: 1rem;
+}
+
+.mainFooter .links span:first-of-type, .mainFooter .links span:first-of-type a {
+    padding-left: 0;
+}
+
+.mainFooter .links span:first-of-type a {
+    padding-right: 0;
+}
+
+.social {
+    text-align: right;
+}
+
+.social img {
+    margin: 0.5rem;
+    padding-bottom: 0.5em;
+    background-image: linear-gradient(white, white);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: all 200ms ease-in 50ms;
+}
+
+.social img:hover {
+    background-size: 100% 3px;
+}
+
+#previews div span img, .button, .links span a {
+    cursor: pointer;
+}
+
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+}
