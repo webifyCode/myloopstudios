@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="loopstudios.css">
   <link rel="stylesheet" href="loopstudioslarge.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="jquery.min.js"></script>
   <title>Frontend Mentor | Loopstudios landing page</title>
 
  
@@ -25,14 +25,14 @@
     <div id="headText">
     <nav>
   <span class="logo"><img src="images/logo.svg" alt="loopstudios_logo"></span> 
-  <label class="hamburger" for="openMenu"><img src="images/icon-hamburger.svg"></label>
+  <label class="hamburger" for="openMenu"><img src="images/icon-hamburger.svg" alt=""></label>
   
   <input type="checkbox" id="openMenu">
   
   <div class="navLinks links">
     <div class="mobileNavHead" >
-      <div class="navIcon"><img src="images/logo.svg"></div>
-      <label class="close" for="openMenu"><img src="images/icon-close.svg">
+      <div class="navIcon"><img src="images/logo.svg" alt=""></div>
+      <label class="close" for="openMenu"><img src="images/icon-close.svg" alt="">
       </label>
       </div>
   <span><a href="">About</a></span>
@@ -47,7 +47,7 @@
   </div>
 
 </header>
-<div class="main">
+<main class="main">
   <div class="intro">
     <div id="introPhoto">
       <picture>
@@ -71,7 +71,7 @@
   <div id="moreCreations">
     <span class="subHeading"> OUR CREATIONS</span>
 
-    <span class="button">See all</span>
+    <button class="button">See all</button>
   </div><!--div#moreCreations end-->
   <div id="previews">
     
@@ -81,7 +81,7 @@
     <picture>
       <source media="(max-width: 1199px)" srcset="images/mobile/image-deep-earth.jpg">
       <source media="(min-width: 1200px)" srcset="images/desktop/image-deep-earth.jpg">
-      <img src="images/mobile/image-deep-earth.jpg" alt="" />
+      <img src="images/mobile/image-deep-earth.jpg" alt="deep_earth" />
     </picture>
     <p>DEEP EARTH</p>
   </span>
@@ -90,7 +90,7 @@
     <picture>
       <source media="(max-width: 1199px)" srcset="images/mobile/image-night-arcade.jpg">
       <source media="(min-width: 1200px)" srcset="images/desktop/image-night-arcade.jpg">
-      <img src="images/mobile/image-night-arcade.jpg" alt="" />
+      <img src="images/mobile/image-night-arcade.jpg" alt="night_arcade" />
     </picture>
     <p>NIGHT ARCADE</p>
   </span>
@@ -99,7 +99,7 @@
     <picture>
       <source media="(max-width: 1199px)" srcset="images/mobile/image-soccer-team.jpg">
       <source media="(min-width: 1200px)" srcset="images/desktop/image-soccer-team.jpg">
-      <img src="images/mobile/image-soccer-team.jpg" alt="" />
+      <img src="images/mobile/image-soccer-team.jpg" alt="soccer_team" />
     </picture>
     <p>SOCCER TEAM VR</p>
   </span>
@@ -108,7 +108,7 @@
     <picture>
       <source media="(max-width: 1199px)" srcset="images/mobile/image-grid.jpg">
       <source media="(min-width: 1200px)" srcset="images/desktop/image-grid.jpg">
-      <img src="images/mobile/image-grid.jpg" alt="" />
+      <img src="images/mobile/image-grid.jpg" alt="racing_grid" />
     </picture>
     <p>THE GRID</p>
   </span>
@@ -120,7 +120,7 @@
     <picture>
       <source media="(max-width: 1199px)" srcset="images/mobile/image-from-above.jpg">
       <source media="(min-width: 1200px)" srcset="images/desktop/image-from-above.jpg">
-      <img src="images/mobile/image-from-above.jpg" alt="" />
+      <img src="images/mobile/image-from-above.jpg" alt="from_up_above" />
     </picture>
     <p>FROM UP ABOVE VR</p>
   </span>
@@ -129,7 +129,7 @@
     <picture>
       <source media="(max-width: 1199px)" srcset="images/mobile/image-pocket-borealis.jpg">
       <source media="(min-width: 1200px)" srcset="images/desktop/image-pocket-borealis.jpg">
-      <img src="images/mobile/image-pocket-borealis.jpg" alt="" />
+      <img src="images/mobile/image-pocket-borealis.jpg" alt="pocket_borealis" />
     </picture>
     <p>POCKET BOREALIS</p>
   </span>
@@ -138,7 +138,7 @@
     <picture>
       <source media="(max-width: 1199px)" srcset="images/mobile/image-curiosity.jpg">
       <source media="(min-width: 1200px)" srcset="images/desktop/image-curiosity.jpg">
-      <img src="images/mobile/image-curiosity.jpg" alt="" />
+      <img src="images/mobile/image-curiosity.jpg" alt="curiousity" />
     </picture>
     <p>THE CURIOSITY</p>
   </span>
@@ -147,22 +147,22 @@
     <picture>
       <source media="(max-width: 1199px)" srcset="images/mobile/image-fisheye.jpg">
       <source media="(min-width: 1200px)" srcset="images/desktop/image-fisheye.jpg">
-      <img src="images/mobile/image-fisheye.jpg" alt="" />
+      <img src="images/mobile/image-fisheye.jpg" alt="fish_eye" />
     </picture>
     <p>MAKE IT FISHEYE</p>
   </span>
 
   </div>
-  <span class="button">See all</span>
+  <button class="button">See all</button>
   
 
 </div><!--div#previews end-->
 
 </div><!--div.creations end-->
 
-</div> <!--section.main end-->
+</main> <!--section.main end-->
 
-</div>
+
 
 <footer>
   <div class="mainFooter">
@@ -183,9 +183,12 @@
   <p>© 2021 Loopstudios. All rights reserved.</p>
   </div>
   </footer>
+
+</div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Samuel Akinode</a>.
+    Coded by <a href="github.com/5erious5am">Samuel Akinode</a>.
   </div>
   
    <script src="loopstudios.js"></script>
