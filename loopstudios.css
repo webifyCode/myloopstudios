@@ -187,18 +187,18 @@
     width: 100%;
 }
 
-#previews div span {
+#previews div div {
     position: relative;
     margin-bottom: 1rem;
 }
 
-#previews div span img {
+#previews div div img {
   width: 100%;
   cursor: pointer;
 }
 
 
-#previews div span p {
+#previews div div p {
     position: absolute;
     bottom: 0;
     left: 0;

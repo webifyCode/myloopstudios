@@ -157,33 +157,33 @@ nav {
 
 /*previews*/
 
-#previews div {
+#previews > div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
 }
 
-#previews div span {
+#previews div div {
     position: relative;
     padding: 0.5rem;
 }
 
-#previews div span img {
+#previews div div img {
     cursor: pointer;
     width: 100%;
     transition: all 200ms ease-in 50ms;
 }
 
 
-#previews div span:hover img {
+#previews div div:hover img {
     opacity: 30%;
 }
 
-#previews div span:hover p {
+#previews div div:hover p {
     color:#000;
 }
 
-#previews div span p {
+#previews div div p {
     position: absolute;
     bottom: 0;
     left: 0;
