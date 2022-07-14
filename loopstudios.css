@@ -163,6 +163,7 @@
     border: 1px solid black;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    background: none;
   }
 
 .button:hover {
@@ -207,7 +208,7 @@
     width: 40%;
 }
 
-#previews span.button {
+#previews .button {
   margin-top: 2em;
 }
 
